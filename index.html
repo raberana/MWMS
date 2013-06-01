@@ -2,23 +2,37 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="assets/css/jquery.mobile-1.3.1.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/jquery.mobile-1.3.1.css">
     <script src="assets/scripts/jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
 </head>
-<body>
+<body class="ui-mobile-viewport">
     <div data-role="page">
-        <div data-role="header">
-            <h1>MOBILE WATER FLOW MONITORING SYSTEM</h1>
+        <div data-role="header" class="header-bg">
         </div>
-        <div data-role="content">
+        <div class="floater"></div>
+        <div data-role="content" class="content">
             <div>
-                <a href="pageA.html">
-                   <input type="button" class="ui-btn-inline" value="LINK TO PAGE A" />
-                </a>
+                <div>
+                    <div class="logotitle logotitle1 alltext">MWMS</div>
+                    <div class="logotitle logotitle2 alltext" style="margin-top: -15px">Mobile Waterflow Monitoring System</div>
+                </div>
+                <div style="margin-top: 60px; text-align:center">
+                    <div class="alltext">
+                        USERNAME:
+                        <input type="text" id="loginUname" />
+                    </div>
+                    <div class="alltext">
+                        PASSWORD:
+                        <input type="password" id="loginPassword" />
+                    </div>
+                    <div id="signInBtn" class="btnPrimary" style="margin-top: 15px">
+                        SIGN IN
+                    </div>
+                </div>
             </div>
         </div>
         <div data-role="footer">
-            Copyright ROJ 2013
         </div>
     </div>
 </body>

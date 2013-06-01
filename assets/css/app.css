@@ -1,0 +1,64 @@
+body {
+    background-color: #333;
+}
+
+h1 {
+    color: #302e2e;
+    text-align: center;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+.header-bg {
+    background-color: #fc9b13;
+    border: 1px solid #fc9b13;
+    font-weight: 700;
+    height: 40px;
+}
+
+.floater {
+    float: left;
+    height: 50%;
+    margin-bottom: 50px;
+}
+
+.content {
+    clear: both;
+    height: 300px;
+    position: relative;
+}
+
+.logotitle {
+    text-align: center;
+}
+
+.logotitle1 {
+    font-size: 70px;
+}
+
+.logotitle2 {
+    font-size: small;
+}
+
+.alltext {
+    font-family: Candara;
+    color: white;
+}
+
+.btnPrimary {
+    width: 250px;
+    height:30px;
+    font-size: 15px;
+    font-weight:600;
+    text-align:center;
+    padding-top:8px;
+    background-color: #fc9b13;
+    color: white;
+    font-family: 'Segoe UI';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
