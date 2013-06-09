@@ -1,5 +1,18 @@
+@font-face {
+    font-family: 'FontCandara';
+    src: url('../Candara.woff') format('woff'), url('../Candara.ttf') format('truetype'); /* Modern Browsers */
+}
+
+
 body {
     background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -8,15 +21,59 @@ h1 {
 }
 
 p {
-    font-family: "Times New Roman";
+    font-family: 'FontCandara', Arial, sans-serif;
     font-size: 20px;
+}
+
+.effect1Container {
+    background: linear-gradient(to right, #333333 0%,#3f322a 4%,#fc9b13 50%,#3f322a 97%,#333333 98%);
+    height: 10px;
+    width: 120px;
+    margin-top: -6px;
+    position: relative;
+    animation: headerEffect 5s infinite;
+    -webkit-animation: headerEffect 3s infinite;
+}
+
+@keyframes headerEffect {
+    0% {
+        left: -20%;
+        opacity: 0;
+    }
+
+    50% {
+        left: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes headerEffect {
+    0% {
+        left: -20%;
+        opacity: 0;
+    }
+
+    50% {
+        left: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 120%;
+        opacity: 0;
+    }
 }
 
 .header-bg {
     background-color: #fc9b13;
-    border: 1px solid #fc9b13;
-    font-weight: 700;
-    height: 40px;
+    height: 60px;
+    z-index: 100;
+    position: relative;
 }
 
 .floater {
@@ -44,17 +101,17 @@ p {
 }
 
 .alltext {
-    font-family: Candara;
+    font-family: 'FontCandara', Arial, sans-serif;
     color: white;
 }
 
 .btnPrimary {
     width: 250px;
-    height:30px;
+    height: 30px;
     font-size: 15px;
-    font-weight:600;
-    text-align:center;
-    padding-top:8px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 8px;
     background-color: #fc9b13;
     color: white;
     font-family: 'Segoe UI';
